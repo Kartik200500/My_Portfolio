@@ -1,6 +1,5 @@
 import React , {useState} from "react";
 import styles from "./nav.module.css";
-import {getImageUrl} from "./utils";
 export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
