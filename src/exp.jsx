@@ -8,12 +8,16 @@ return(
     <div>
       <div>{
         skills.map((skill,id) => {
-          return (<div key={id}>
+          return (
+          <div key={id}>
             <div>
-              <img src={getImageUrl(skill.imageSrc)} alt={skill.title}/></div>
+              <img src={getImageUrl(skill.imageSrc)} alt={skill.title}/>
+              </div>
+          <p>{skill.title}</p>
           </div>
-      })
-    }</div>
+          );
+      })}
+    </div>
     </div>
   </section>
 )
